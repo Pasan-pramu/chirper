@@ -61,24 +61,30 @@ public function store(Request $request)
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
-    {
-        //
-    }
+   
+public function edit(Chirp $chirp)
+{
+    // We'll add authorization in lesson 11
+    return view('chirps.edit', compact('chirp'));
+}
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
+public function update(Request $request, Chirp $chirp)
+{
+    // Validate
+    $validated = $request->validate([
+        'message' => 'required|string|max:255',
+    ]);
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
+    // Update
+    $chirp->update($validated);
+
+    return redirect('/')->with('success', 'Chirp updated!');
+}
+
+public function destroy(Chirp $chirp)
+{
+    $chirp->delete();
+
+    return redirect('/')->with('success', 'Chirp deleted!');
+}
 }
