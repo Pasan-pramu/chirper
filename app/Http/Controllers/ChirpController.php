@@ -83,8 +83,6 @@ public function update(Request $request, Chirp $chirp)
 
 public function destroy(Chirp $chirp)
 {
-   
-
     $chirp->delete();
 
     return redirect('/')->with('success', 'Chirp deleted!');
