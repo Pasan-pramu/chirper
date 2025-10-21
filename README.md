@@ -30,13 +30,13 @@
 
 ---
 
-## ✨ Introduction
+## <a name="introduction">✨ Introduction</a>
 
 Chirper is a lightweight social media application built using **Laravel**, **Blade Components**, and **TailwindCSS**. Users can register, post messages (chirps), edit or delete their chirps, and view other users’ posts in a clean, modern feed.
 
 ---
 
-## ⚙️ Tech Stack
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - **[Laravel](https://laravel.com/)** — PHP framework for web development, handling routing, models, controllers, and Blade templates.
 - **[Blade](https://laravel.com/docs/10.x/blade)** — Templating engine used for building dynamic, reusable UI components.
@@ -46,7 +46,7 @@ Chirper is a lightweight social media application built using **Laravel**, **Bla
 
 ---
 
-## 🔋 Features
+## <a name="features">🔋 Features</a>
 
 - **User Authentication**: Sign up, log in, and log out securely.
 - **Post Chirps**: Create new chirps with a maximum of 255 characters.
@@ -58,7 +58,7 @@ Chirper is a lightweight social media application built using **Laravel**, **Bla
 
 ---
 
-## 🤸 Quick Start
+## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally.
 
