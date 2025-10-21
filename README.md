@@ -1,61 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <br />
+  <a href="" target="_blank">
+    <img src="public/images/chirps.png" alt="Chirper Banner" width="600">
+  </a>
+  <br />
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <div>
+    <img src="https://img.shields.io/badge/-Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"/>
 
-## About Laravel
+  </div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  <h3 align="center">Chirper — A Mini Twitter Clone</h3>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  <div align="center">
+    A simple social media platform built with Laravel and Blade, where users can sign up, post chirps, and interact with the latest feed!
+  </div>
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📋 Table of Contents
 
-## Learning Laravel
+1. ✨ [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ✨ Introduction
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Chirper is a lightweight social media application built using **Laravel**, **Blade Components**, and **TailwindCSS**. Users can register, post messages (chirps), edit or delete their chirps, and view other users’ posts in a clean, modern feed.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## ⚙️ Tech Stack
 
-### Premium Partners
+- **[Laravel](https://laravel.com/)** — PHP framework for web development, handling routing, models, controllers, and Blade templates.
+- **[Blade](https://laravel.com/docs/10.x/blade)** — Templating engine used for building dynamic, reusable UI components.
+- **[TailwindCSS](https://tailwindcss.com/)** — Utility-first CSS framework for responsive and customizable design.
+- **[SQLite](https://www.sqlite.org/index.html)** — Lightweight relational database used for storing users and chirps.
+- **[PHP](https://www.php.net/)** — Server-side scripting language powering the application.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🔋 Features
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **User Authentication**: Sign up, log in, and log out securely.
+- **Post Chirps**: Create new chirps with a maximum of 255 characters.
+- **Edit & Delete Chirps**: Users can manage their own posts.
+- **Feed**: View latest chirps from all users, sorted by newest first.
+- **Timestamps**: Chirps display when they were created and edited.
+- **Responsive Design**: Works across mobile, tablet, and desktop devices.
+- **Avatar System**: Each user has an avatar generated from their email; anonymous posts show a default avatar.
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🤸 Quick Start
 
-## Security Vulnerabilities
+Follow these steps to set up the project locally.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Prerequisites
 
-## License
+- [PHP >= 8.0](https://www.php.net/)
+- [Composer](https://getcomposer.org/)
+- [SQLite](https://www.sqlite.org/index.html) (or another supported database)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+### Cloning the Repository
+
+```bash
+git clone https://github.com/Pasan-pramu/chirper.git
+cd chirper
