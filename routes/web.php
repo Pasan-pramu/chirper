@@ -7,7 +7,8 @@ use App\Http\Controllers\Auth\Logout;
 
 Route::get('/', [ChirpController::class, 'index']);
 
-//protected routes
+//protected routes|
+
 Route::middleware('auth')->group(function(){
 
     Route::post('/chirps', [ChirpController::class, 'store']);
